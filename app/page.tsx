@@ -2,7 +2,6 @@ import { SearchIcon } from "lucide-react"
 import Header from "./_components/header"
 import Image from "next/image"
 import { Button } from "./_components/ui/button"
-import { Card, CardContent } from "./_components/ui/card"
 import { Input } from "./_components/ui/input"
 import { db } from "./_lib/prisma"
 import { quickSearchOptions } from "./_constants/quicksearch"
@@ -73,7 +72,7 @@ const Home = async () => {
           ))}
         </div>
 
-        {/* RECOMENDADOS */}
+        {/* POPULARES */}
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
           Populares
         </h2>
@@ -85,16 +84,6 @@ const Home = async () => {
             />
           ))}
         </div>
-
-        <footer>
-          <Card>
-            <CardContent className="px-5 py-6">
-              <p className="text-sm text-gray-400">
-                © 2023 Copyright <span className="font-bold">FSW Barber</span>
-              </p>
-            </CardContent>
-          </Card>
-        </footer>
       </div>
     </div>
   )
